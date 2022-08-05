@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #333;
+}
+.typedKey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .keybord-wrapper {
+    min-width: 300px;
+    max-width: 650px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73,
+      2px 2px 5px rgba(94, 104, 121, 0.288);
+    margin: 0 auto;
+  }
+  .keybord-wrapper .keys {
+    display: flex;
+    justify-content: center;
+  }
+  .keybord-wrapper .keys input {
+    height: 50px;
+    width: 50px;
+    padding: 6px;
+    border: none;
+    outline: none;
+    background: #dde1e7;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+      -3px -3px 7px rgba(255, 255, 255, 0.05);
+    margin: 4px;
+    color: grey;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: default;
+  }
+  .keybord-wrapper .keys input:focus {
+    font-size: 19px;
+    font-weight: bold;
+    color: #66db34;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+      inset -3px -3px 7px rgba(255, 255, 255, 0.05);
+  }
+  .keybord-wrapper .keys input[value="SPACE"] {
+    width: 60%;
+  }
+  @media (max-width: 480px) {
+    .keybord-wrapper {
+      padding: 6px;
+    }
+    .keybord-wrapper .keys input {
+      width: 30px;
+      margin: 3px;
+    }
+  }
+  
